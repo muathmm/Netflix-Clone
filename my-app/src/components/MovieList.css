@@ -1,0 +1,25 @@
+.movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.movie-card {
+    margin: 10px;
+    width: 18rem;
+}
+
+.movie-card .card-body {
+    height: auto; 
+    display: flex;
+    flex-direction: column;
+    
+    
+     justify-content: space-between;  
+}
+
+.movie-card .card-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
