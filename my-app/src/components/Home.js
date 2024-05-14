@@ -12,8 +12,7 @@ function Home() {
     const fetchdata = async () => {
         try {
             const response = await axios.get('http://localhost:3001/trending');
-            const data=await response.data
-            setData(data);
+            setData(response.data);
         } catch (error) {
             console.error('Error fetching data:', error);
         }
@@ -22,7 +21,7 @@ function Home() {
     return (
         
         
-                <MovieList  data={data} />
+                <MovieList  data={data} page="home" />
 
     
     );
