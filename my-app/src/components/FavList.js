@@ -20,7 +20,7 @@ function FavoriteList() {
     }
 
     return (
-        <MovieList data={data} page="favorite" />
+        <MovieList data={data} page="favorite" toupdate="update" />
     );
 }
 
